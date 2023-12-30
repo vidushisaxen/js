@@ -27,16 +27,27 @@
 //console.table() --> displays data in the form of table
 
 //console.dir() --> displays list of all properties and values 
-let personData=[{
-    personName :"Vidushi",
-    personId : "ABC123"
-},
-{
-    personName : "Saxena",
-    personId : "DEF234"
-}]
-console.dir(personData);
+// let personData=[{
+//     personName :"Vidushi",
+//     personId : "ABC123"
+// },
+// {
+//     personName : "Saxena",
+//     personId : "DEF234"
+// }]
+// console.dir(personData);
 
+
+//console.trace() --> output a stack trace showing the function call sequence to the current point.
+
+function firstFunction() {
+    function secondFunction() {
+      console.trace();
+    }
+    secondFunction();
+  }
+  
+  firstFunction();
 
  
 
